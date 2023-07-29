@@ -1,0 +1,15 @@
+
+@import "./constants.scss";
+
+.banner-container {
+    @include template;
+}
+.cato
+{
+    background-color: #88C74A;
+    color: white;
+    font-size: large;
+    width: 23rem;
+    height: 3rem;
+   
+}

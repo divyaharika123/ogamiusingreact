@@ -1,0 +1,39 @@
+@import "./constants.scss";
+
+.header {
+    background-color: $light;
+    padding: 0.5rem 0;
+    width: 100%;
+}
+
+.header-container {
+    @include template;
+    @include fontReg;
+    @include flexBox(space-between,row,center);
+    .header-contact {
+        @include flexBox(center,row,center);
+        .flexBox {
+            margin-right: 1.5rem; 
+            @include flexBox(center,row,center);
+            p {
+                margin-left:0.5rem;
+            }
+        }
+    }
+    .header-actions {
+        .header-social-icons {
+            svg {
+                margin-right: .5rem;
+                font-size: 1.2rem;
+            }
+        }
+        @include flexBox(center,row,center);
+        .header-user {
+            @include flexBox(center,row,center);
+            padding-left: 1.5rem;
+            svg {
+                margin-right: 0.5rem;
+            }
+        }
+    }
+}
